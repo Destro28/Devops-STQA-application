@@ -1,0 +1,343 @@
+PS C:\Users\exam1\Desktop\STQA Project 225> cd backend
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> npm init -y
+Wrote to C:\Users\exam1\Desktop\STQA Project 225\backend\package.json:
+
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
+
+
+
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> npm install
+
+up to date, audited 1 package in 223ms
+
+found 0 vulnerabilities
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> npm install express
+
+added 68 packages, and audited 69 packages in 2s
+
+16 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> cd .. 
+PS C:\Users\exam1\Desktop\STQA Project 225> cd frontend
+PS C:\Users\exam1\Desktop\STQA Project 225\frontend> mkdir css
+
+
+    Directory: C:\Users\exam1\Desktop\STQA Project 225\frontend
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        31-10-2025     11:51                css
+
+
+PS C:\Users\exam1\Desktop\STQA Project 225\frontend> mkdir js
+
+
+    Directory: C:\Users\exam1\Desktop\STQA Project 225\frontend
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        31-10-2025     11:51                js
+
+
+PS C:\Users\exam1\Desktop\STQA Project 225\frontend> cd ..
+PS C:\Users\exam1\Desktop\STQA Project 225> cd backend
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> npm install bcrypt express-session
+
+added 10 packages, and audited 79 packages in 1s
+
+16 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> mkdir data routes middlewares utils
+mkdir : A positional parameter cannot be found that accepts argument 'routes'.
+At line:1 char:1
++ mkdir data routes middlewares utils
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [mkdir], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,mkdir
+
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> mkdir data
+
+
+    Directory: C:\Users\exam1\Desktop\STQA Project 225\backend
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        31-10-2025     11:55                data
+
+
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> mkdir routes
+
+
+    Directory: C:\Users\exam1\Desktop\STQA Project 225\backend
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        31-10-2025     11:55                routes
+
+
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> mkdir middlewares
+
+
+    Directory: C:\Users\exam1\Desktop\STQA Project 225\backend
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        31-10-2025     11:55                middlewares
+
+
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> mkdir utils
+
+
+    Directory: C:\Users\exam1\Desktop\STQA Project 225\backend
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        31-10-2025     11:55                utils
+
+
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> cd backend
+cd : Cannot find path 'C:\Users\exam1\Desktop\STQA Project 225\backend\backend' because it does not exist.
+At line:1 char:1
++ cd backend
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\exam1\...backend\backend:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> cd ..
+PS C:\Users\exam1\Desktop\STQA Project 225> cd backend
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> npm start
+
+> backend@1.0.0 start
+> node app.js
+
+node:internal/modules/cjs/loader:1372
+  throw err;
+  ^
+
+Error: Cannot find module '../utils/helpers'
+Require stack:
+- C:\Users\exam1\Desktop\STQA Project 225\backend\routes\auth.js
+- C:\Users\exam1\Desktop\STQA Project 225\backend\app.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1369:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Module._load (node:internal/modules/cjs/loader:1179:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1449:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (C:\Users\exam1\Desktop\STQA Project 225\backend\routes\auth.js:3:35)
+    at Module._compile (node:internal/modules/cjs/loader:1692:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\exam1\\Desktop\\STQA Project 225\\backend\\routes\\auth.js',
+    'C:\\Users\\exam1\\Desktop\\STQA Project 225\\backend\\app.js'
+  ]
+}
+
+Node.js v24.4.1
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> npm start
+
+> backend@1.0.0 start
+> node app.js
+
+Server running on http://localhost:3000
+Terminate batch job (Y/N)? y
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> npm start 
+
+> backend@1.0.0 start
+> node app.js
+
+Server running on http://localhost:3000
+Terminate batch job (Y/N)? y
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> npm start
+
+> backend@1.0.0 start
+> node app.js
+
+Server running on http://localhost:3000
+Terminate batch job (Y/N)? y
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> chrome --version
+chrome : The term 'chrome' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path 
+is correct and try again.
+At line:1 char:1
++ chrome --version
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (chrome:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\exam1\Desktop\STQA Project 225\backend> cd ..
+PS C:\Users\exam1\Desktop\STQA Project 225> mkdir tests
+>> cd tests
+>> npm init -y
+>>
+
+
+    Directory: C:\Users\exam1\Desktop\STQA Project 225
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        31-10-2025     12:35                tests
+Wrote to C:\Users\exam1\Desktop\STQA Project 225\tests\package.json:
+
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
+
+
+
+
+
+PS C:\Users\exam1\Desktop\STQA Project 225\tests> npm install selenium-webdriver
+
+added 17 packages, and audited 18 packages in 1s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\exam1\Desktop\STQA Project 225\tests> npm install chromedriver
+
+added 72 packages, and audited 90 packages in 4s
+
+8 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\exam1\Desktop\STQA Project 225\tests> node setup-check.js
+
+DevTools listening on ws://127.0.0.1:51047/devtools/browser/024efde1-2bec-4666-9319-3b6bebcd21c5
+C:\Users\exam1\Desktop\STQA Project 225\tests\node_modules\selenium-webdriver\lib\error.js:523
+    let err = new ctor(data.message)
+              ^
+
+SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 142
+Current browser version is 141.0.7390.123 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+    at Object.throwDecodedError (C:\Users\exam1\Desktop\STQA Project 225\tests\node_modules\selenium-webdriver\lib\error.js:523:15)
+    at parseHttpResponse (C:\Users\exam1\Desktop\STQA Project 225\tests\node_modules\selenium-webdriver\lib\http.js:524:13)
+    at Executor.execute (C:\Users\exam1\Desktop\STQA Project 225\tests\node_modules\selenium-webdriver\lib\http.js:456:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  remoteStacktrace: 'Symbols not available. Dumping unresolved backtrace:\n' +
+    '\t0x7ff7e2237a35\n' +
+    '\t0x7ff7e2237a90\n' +
+    '\t0x7ff7e1fb16ad\n' +
+    '\t0x7ff7e1ff79ba\n' +
+    '\t0x7ff7e1ff678c\n' +
+    '\t0x7ff7e1ff1546\n' +
+    '\t0x7ff7e1febbd9\n' +
+    '\t0x7ff7e2040a42\n' +
+    '\t0x7ff7e2040280\n' +
+    '\t0x7ff7e1ffb068\n' +
+    '\t0x7ff7e1ffbe93\n' +
+    '\t0x7ff7e24f29d0\n' +
+    '\t0x7ff7e24ece50\n' +
+    '\t0x7ff7e250cc45\n' +
+    '\t0x7ff7e22530ce\n' +
+    '\t0x7ff7e225adbf\n' +
+    '\t0x7ff7e2240c14\n' +
+    '\t0x7ff7e2240dcf\n' +
+    '\t0x7ff7e2226828\n' +
+    '\t0x7ff993f9e8d7\n' +
+    '\t0x7ff995d1c34c\n'
+}
+
+Node.js v24.4.1
+PS C:\Users\exam1\Desktop\STQA Project 225\tests> npm uninstall chromedriver
+
+removed 72 packages, and audited 18 packages in 599ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\exam1\Desktop\STQA Project 225\tests> npm install chromedriver@141.0.7390.123
+npm error code ETARGET
+npm error notarget No matching version found for chromedriver@141.0.7390.123.
+npm error notarget In most cases you or one of your dependencies are requesting
+npm error notarget a package version that doesn't exist.
+npm error A complete log of this run can be found in: C:\Users\exam1\AppData\Local\npm-cache\_logs\2025-10-31T07_08_25_302Z-debug-0.log
+PS C:\Users\exam1\Desktop\STQA Project 225\tests> node setup-check.js       
+node:internal/modules/cjs/loader:1372
+  throw err;
+  ^
+
+Error: Cannot find module 'chromedriver'
+Require stack:
+- C:\Users\exam1\Desktop\STQA Project 225\tests\setup-check.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1369:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Module._load (node:internal/modules/cjs/loader:1179:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1449:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (C:\Users\exam1\Desktop\STQA Project 225\tests\setup-check.js:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1692:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\exam1\\Desktop\\STQA Project 225\\tests\\setup-check.js'
+  ]
+}
+
+Node.js v24.4.1
+PS C:\Users\exam1\Desktop\STQA Project 225\tests> DETECT_CHROMEDRIVER_VERSION=true npm install chromedriver
+DETECT_CHROMEDRIVER_VERSION=true : The term 'DETECT_CHROMEDRIVER_VERSION=true' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ DETECT_CHROMEDRIVER_VERSION=true npm install chromedriver
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (DETECT_CHROMEDRIVER_VERSION=true:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\exam1\Desktop\STQA Project 225\tests> npm uninstall chromedriver
+
+up to date, audited 18 packages in 688ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\exam1\Desktop\STQA Project 225\tests> npm install chromedriver -- --detect_chromedriver_version
+npm error code E404
+npm error 404 Not Found - GET https://registry.npmjs.org/--detect_chromedriver_version - Not found
+npm error 404
+npm error 404  '--detect_chromedriver_version@*' is not in this registry.
+npm error 404
+npm error 404 Note that you can also install from a
+npm error 404 tarball, folder, http url, or git url.
+npm error A complete log of this run can be found in: C:\Users\exam1\AppData\Local\npm-cache\_logs\2025-10-31T07_11_34_941Z-debug-0.log
+PS C:\Users\exam1\Desktop\STQA Project 225\tests> 
