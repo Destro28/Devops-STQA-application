@@ -4,5 +4,5 @@ const authMiddleware = (req, res, next) => {
     }
     next();
 };
-
+//adding a small comment here to test git changes.....
 module.exports = authMiddleware;
