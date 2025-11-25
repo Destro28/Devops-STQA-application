@@ -223,7 +223,17 @@ async function runAllTests() {
     
     clearUsers();
     
-    driver = await new Builder().forBrowser('chrome').build();
+    // driver = await new Builder().forBrowser('chrome').build();
+    const chrome = require('selenium-webdriver/chrome');
+
+    let options = new chrome.Options();
+    options.addArguments('--headless', '--no-sandbox', '--disable-dev-shm-usage');
+
+    driver = await new Builder()
+        .forBrowser('chrome')
+        .setChromeOptions(options)
+        .build();
+
     
     try {
         await testValidRegistration();
